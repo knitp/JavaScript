@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">
+        <p>Nothing</p>
+    </div>
+    <script>
+        let str = "kishan";
+        let a=null;
+        let b=undefined;
+
+        let employee ={
+            name:"Harry",
+            salary:1000000,
+            age:35,
+        }
+        console.log(employee);
+        console.log(employee.salary);
+        console.log(employee['age']);
+        //let names = [1,2,"Harry",undefined];
+
+        let names = new Array(41,1,2,"harry",undefined);
+        console.log(names);
+        console.log(names.length);
+        names=names.sort();
+        names.push(55);
+        console.log(names);
+    </script>
+</body>
+</html>
