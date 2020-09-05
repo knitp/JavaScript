@@ -11,7 +11,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aperiam tempora. Perferendis quos ea delectus libero, ullam rem eligendi adipisci, nostrum blanditiis est voluptatibus consequuntur animi, at eum mollitia debitis!</p>
     </div>
     <script>
-        var string ='thi"s';
+        /* var string ='thi"s';
         console.log(string);
         var name ='Harry';
         channel ='Codewithharry';
@@ -25,7 +25,33 @@
         var y = new String("this");
         console.log(y);
 
-        document.getElementById('content').innerHTML ='<h3>this is a h3 heading</h3>';
+        document.getElementById('content').innerHTML ='<h3>this is a h3 heading</h3>'; */
+       
+       //String Functions just like java string function(trim, concat, charAt());
+       var str  = `this is a string`;
+       console.log(str);
+       //gives first occurence of substring
+       var position = str.indexOf('is');
+       console.log(position);
+       //last index of substring
+       position = str.lastIndexOf('is');
+       console.log(position);
+       //substring from a string
+       //slice(start inclusive and endindex eclusive)
+       var substr = str.slice(1,6);
+       console.log(substr);
+       //substring(start inclusive and endindex eclusive)
+       substr = str.substring(1,6);
+       console.log(substr);
+       //substr(start index and length)
+       substr = str.substr(1,6);
+       console.log(substr);
+       // string in javascript act like java string literals
+       var replaced = str.replace("string","kishan");
+       console.log(str);
+       console.log(replaced);
+
+       console.log(str.toUpperCase());
     </script>
 </body>
 </html>
