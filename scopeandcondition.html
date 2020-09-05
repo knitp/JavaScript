@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and condition</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var str1="hello1";
+        //does not give error if we declare same variable name second time so use let instead var
+        var str1="hello2";
+        console.log(str1);
+
+        let a=5;
+        //this will give error a has been already declared
+        //let a=6;
+        
+        //block
+        {  
+            //local to block
+            let a=10;
+            console.log(a);
+        }
+
+        let age =19;
+        if(age>18)
+        {
+            console.log("can vote");
+        }
+        else
+        {
+            console.log('underage');
+        }
+
+        const cups =45;
+        switch (cups) {
+            case 4:
+                console.log('4');
+                break;
+        
+            default:
+            console.log(cups);
+                break;
+        }
+    </script>
+</body>
+</html>
